@@ -32,6 +32,31 @@ html,body{
     width: 100%;
 }
 
+body {
+    cursor: none;
+}
+
+.cursor-dot {
+    width: 6px;
+    height: 6px;
+    background: #00FF00;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(80%, 80%);
+}
+
+.cursor-ring {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #00FF00;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+}
+
 
 /* Optional: Scrollbar styling to match the theme */
 ::-webkit-scrollbar {

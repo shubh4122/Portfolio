@@ -93,8 +93,10 @@ const CyberBackground3D = () => {
 
         const clock = new Three.Clock();
         let animationId;
+        // let isRunning = true;
 
         const animate = () => {
+            // if(!isRunning) {return;}
             animationId = requestAnimationFrame(animate);
             const elapsedTime = clock.getElapsedTime();
 
@@ -119,10 +121,27 @@ const CyberBackground3D = () => {
 
         window.addEventListener('resize', handleResize);
 
+        // return () => {
+        //     // isRunning = false;
+        //     window.removeEventListener('resize', handleResize);
+        //     window.removeEventListener('mousemove', handleMouseMove);
+        //     // cancelAnimationFrame(animationId);
+        //
+        //     if (mountRef.current && renderer.domElement) {
+        //         mountRef.current.removeChild(renderer.domElement);
+        //     }
+        //
+        //     // Dispose Three.js resources to prevent memory leaks
+        //     geometry.dispose();
+        //     material.dispose();
+        //     renderer.dispose();
+        // };
+
+
     }, []); //deps empty means it will run when the website loads
 
     return (
-        <div ref={mountRef} className=""/>
+        <div ref={mountRef} className="fixed z-[-1]"/>
     );
 };
 

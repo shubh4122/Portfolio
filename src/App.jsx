@@ -1,6 +1,6 @@
 import './App.css'
 import CyberBackground3D from "./Components/CyberBackground3D.jsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 
 const App = () => {
@@ -8,10 +8,56 @@ const App = () => {
 
     // setHighPerfMode(true); - //in 2 conditions - 1. Low performance device detected. 2. Toggled
 
+    useEffect(() => {
+        const dot = document.querySelector('.cursor-dot');
+        const ring = document.querySelector('.cursor-ring');
+
+        let mouseX = 0;
+        let mouseY = 0;
+        let ringX = 0;
+        let ringY = 0;
+
+        const onMove = (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            dot.style.left = mouseX + "px";
+            dot.style.top = mouseY + "px";
+        };
+
+        window.addEventListener("mousemove", onMove);
+
+        const loop = () => {
+            // ring always eases toward mouse
+            ringX += (mouseX - ringX) * 0.25;
+            ringY += (mouseY - ringY) * 0.25;
+
+            ring.style.left = ringX + "px";
+            ring.style.top = ringY + "px";
+
+            // This function schedules my functions to run 60 times every second (basically before each repaint - 60fps) Required for easing/lag smooth and controlled animations. CSS animations can't do it much
+            requestAnimationFrame(loop);
+        };
+
+        loop();
+
+        return () => window.removeEventListener("mousemove", onMove);
+    }, []);
 
     return (
         <div className="relative overflow-x-hidden">
-            {HighPerfMode && <CyberBackground3D />}
+            {/*Background*/}
+            {HighPerfMode && <CyberBackground3D/>}
+
+            {/*Cursor*/}
+            <div className="cursor-ring">
+                <div className="cursor-dot"></div>
+            </div>
+
+            {/*Foreground*/}
+            <nav className="relative flex items-center justify-between ">
+                <div className="text-red-700 border-dotted border-red-600 border-2">Hello World</div>
+            </nav>
         </div>
 
 
