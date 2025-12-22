@@ -1,10 +1,12 @@
 import './App.css'
 import CyberBackground3D from "./Components/CyberBackground3D.jsx";
 import {useEffect, useState} from "react";
+import SummaryTerminal from "./Components/SummaryTerminal.jsx";
 
 
 const App = () => {
     const [HighPerfMode, setHighPerfMode] = useState(true);
+    const [showTerminal, setShowTerminal] = useState(true);
 
     // setHighPerfMode(true); - //in 2 conditions - 1. Low performance device detected. 2. Toggled
 
@@ -43,21 +45,29 @@ const App = () => {
 
         return () => window.removeEventListener("mousemove", onMove);
     }, []);
-
+console.log(showTerminal);
     return (
         <div className="relative overflow-x-hidden">
             {/*Background*/}
             {HighPerfMode && <CyberBackground3D/>}
 
-            {/*Cursor*/}
-            <div className="cursor-ring">
-                <div className="cursor-dot"></div>
+            {/*Foreground*/}
+            <div className="fixed w-screen h-screen">
+                {/*Cursor*/}
+                <div className="cursor-ring">
+                    <div className="cursor-dot"></div>
+                </div>
+
+                {/*Foreground*/}
+                <nav className="absolute flex items-center justify-between mx-3">
+                    <div className="text-red-700 border-dotted border-red-600 border-2">Hello World</div>
+                </nav>
+
+                <div className="flex justify-center align-top h-screen w-screen">
+                    {showTerminal && <SummaryTerminal closeTerminal={() => setShowTerminal(false)} />}
+                </div>
             </div>
 
-            {/*Foreground*/}
-            <nav className="relative flex items-center justify-between ">
-                <div className="text-red-700 border-dotted border-red-600 border-2">Hello World</div>
-            </nav>
         </div>
 
 

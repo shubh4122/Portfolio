@@ -70,7 +70,7 @@ const CyberBackground3D = () => {
 
         // The Material - this controls the "Dot" look
         const material = new Three.PointsMaterial({
-            size: 0.015, // Adjust size of dots
+            size: 0.035, // Adjust size of dots
             color: 0xff3b3b, // The Fsociety Red accent
             transparent: true,
             opacity: 0.8,
