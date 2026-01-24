@@ -16,11 +16,13 @@ The React Compiler is not enabled on this template because of its impact on dev 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 
-References for used resources:
+References/resources used:
 - Vite - https://vite.dev/guide/
 - Tailwind - https://tailwindcss.com/docs/installation/using-vite
 - For more pre-built packages -  https://www.npmjs.com/
 - Three.js - https://threejs.org/
+
+[//]: # (- Framer-Motion - For smooth animations/motion)
 
 [//]: # (- Three.js Guide quick video - https://www.youtube.com/watch?v=_OwJV2xL8M8)
 

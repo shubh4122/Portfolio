@@ -2,11 +2,12 @@ import './App.css'
 import CyberBackground3D from "./Components/CyberBackground3D.jsx";
 import {useEffect, useState} from "react";
 import SummaryTerminal from "./Components/SummaryTerminal.jsx";
+// import { motion, AnimatePresence} from "motion/react";
 
 
 const App = () => {
     const [HighPerfMode, setHighPerfMode] = useState(true);
-    const [showTerminal, setShowTerminal] = useState(true);
+    const [showTerminal, setShowTerminal] = useState(false);
 
     // setHighPerfMode(true); - //in 2 conditions - 1. Low performance device detected. 2. Toggled
 
@@ -45,27 +46,80 @@ const App = () => {
 
         return () => window.removeEventListener("mousemove", onMove);
     }, []);
-console.log(showTerminal);
+
     return (
-        <div className="relative overflow-x-hidden">
+        <div className="relative overflow-x-hidden font-mono antialiased">
             {/*Background*/}
             {HighPerfMode && <CyberBackground3D/>}
 
             {/*Foreground*/}
-            <div className="fixed w-screen h-screen">
+            <div className="flex flex-col w-screen h-screen">
                 {/*Cursor*/}
                 <div className="cursor-ring">
                     <div className="cursor-dot"></div>
                 </div>
 
-                {/*Foreground*/}
-                <nav className="absolute flex items-center justify-between mx-3">
-                    <div className="text-red-700 border-dotted border-red-600 border-2">Hello World</div>
+                <nav className="flex items-center justify-around w-screen h-[10vh] ">
+                    <div className="logo flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.9)]"></span>
+                        <span className="text-white font-bold">Shubham Pandey</span>
+                    </div>
+
+
+                    <button
+                        onClick={() => {
+                            setShowTerminal(true)
+                        }}
+                        className="w-1/6 h-2/4 relative flex items-center justify-center gap-3
+                         rounded-full
+                         bg-black/40 backdrop-blur-xl backdrop-saturate-150
+                         border border-green-400/30
+                         text-green-400 font-mono text-sm
+                         shadow-[0_0_20px_rgba(0,255,0,0.15)]
+                         hover:bg-black/60 hover:border-green-400/60
+                         hover:shadow-[0_0_30px_rgba(0,255,0,0.35)]
+                         transition-all duration-300
+                         cursor-hover-target">
+                        <span className="opacity-80">&gt;_</span>
+                        <span className="opacity-70">Know me in a glimpse</span>
+
+                        <span className="w-[5px] h-4 bg-green-400 animate-pulse ml-1"></span>
+                    </button>
+
+                    <button
+                        className="relative flex items-center
+                         rounded-full
+                         bg-black/40 backdrop-blur-xl backdrop-saturate-150
+                         border border-green-400/30
+                         text-green-400 font-mono text-sm
+                         shadow-[0_0_20px_rgba(0,255,0,0.15)]
+                         hover:bg-black/60 hover:border-green-400/60
+                         hover:shadow-[0_0_30px_rgba(0,255,0,0.35)]
+                         transition-all duration-300
+                         cursor-hover-target">
+                        <span className="opacity-80">&gt;_</span>
+                        <span className="opacity-70">Know me in a glimpse</span>
+                        {/*Fake Terminal like cursor*/}
+                        <span className="w-[1px] h-4 bg-green-400 animate-pulse ml-1"></span>
+                    </button>
+
+
                 </nav>
 
-                <div className="flex justify-center align-top h-screen w-screen">
-                    {showTerminal && <SummaryTerminal closeTerminal={() => setShowTerminal(false)} />}
+                {/*Hero Section*/}
+                <div className="w-screen bg-white">
+                    <h4 className="text-red-700">Welcome, Establishing Connection...</h4>
                 </div>
+
+
+
+
+
+                {/*Terminal - code to be at the end*/}
+                <div className="flex justify-center align-top h-screen w-screen">
+                {showTerminal && <SummaryTerminal closeTerminal={() => setShowTerminal(false)}/>}
+                </div>
+
             </div>
 
         </div>
