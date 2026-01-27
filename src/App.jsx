@@ -97,7 +97,11 @@ const App = () => {
                     <HeroSection roles={roles} role={role} />
                 </div>
 
-                <ExperienceSection/>
+                <div>
+                    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Work Experience.</h1>
+
+                    <ExperienceSection/>
+                </div>
 
             </div>
 

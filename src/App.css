@@ -17,6 +17,10 @@ html,body{
     margin-top: 100px;
 }
 
+.leftall {
+    margin-left: 128px;
+}
+
 .pill {
     padding: 6px 16px;
 }

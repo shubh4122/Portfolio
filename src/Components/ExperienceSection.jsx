@@ -2,9 +2,7 @@ import ExpCard from "./ExpCard.jsx";
 
 const ExperienceSection = () => {
     return (
-        <div className="h-screen w-screen  flex flex-col items-end">
-            <h1 className="text-7xl font-bold tracking-tight text-green-400 ">Work Experience.</h1>
-
+        <div className="h-fit w-screen  flex flex-col items-end">
             <ExpCard img={"effiya.png"} expRole={"Analyst - Software & Data Engineering"}
                      duration={"Jun'2024 - Present"} Company={"Effiya Technologies"} location={"Hybrid | Saudi Arabia | Delhi"}
                      responsibilities={[
