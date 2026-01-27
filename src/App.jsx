@@ -2,16 +2,29 @@ import './App.css'
 import CyberBackground3D from "./Components/CyberBackground3D.jsx";
 import {useEffect, useState} from "react";
 import SummaryTerminal from "./Components/SummaryTerminal.jsx";
+import Pill from "./Components/Pill.jsx";
+import HeroSection from "./Components/HeroSection.jsx";
 // import { motion, AnimatePresence} from "motion/react";
 
 
 const App = () => {
     const [HighPerfMode, setHighPerfMode] = useState(true);
     const [showTerminal, setShowTerminal] = useState(false);
+    const [role, setRole] = useState(0);
 
     // setHighPerfMode(true); - //in 2 conditions - 1. Low performance device detected. 2. Toggled
 
+    const roles = [
+        "A Software Developer",
+        "A Data Engineer",
+        "An Impact-driven Engineer",
+        "A Problem Solver",
+        "A Tech Generalist",
+        "An AI Developer",
+    ];
+
     useEffect(() => {
+        // Custom Cursor
         const dot = document.querySelector('.cursor-dot');
         const ring = document.querySelector('.cursor-ring');
 
@@ -44,7 +57,16 @@ const App = () => {
 
         loop();
 
-        return () => window.removeEventListener("mousemove", onMove);
+
+        // Hero Section - ROLES
+        const intervalId = setInterval(() => {
+            setRole((prevRole)=>(prevRole+1) % roles.length)
+        }, 2000);
+
+        return () => {
+            window.removeEventListener("mousemove", onMove);
+            clearInterval(intervalId);
+        }
     }, []);
 
     return (
@@ -53,13 +75,13 @@ const App = () => {
             {HighPerfMode && <CyberBackground3D/>}
 
             {/*Foreground*/}
-            <div className="flex flex-col w-screen h-screen">
+            <div className="foreground">
                 {/*Cursor*/}
                 <div className="cursor-ring">
                     <div className="cursor-dot"></div>
                 </div>
 
-                <nav className="flex items-center justify-around w-screen h-[10vh] ">
+                <nav className="flex items-center justify-around w-screen h-[10vh]">
                     <div className="logo flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.9)]"></span>
                         <span className="text-white font-bold">Shubham Pandey</span>
@@ -70,7 +92,7 @@ const App = () => {
                         onClick={() => {
                             setShowTerminal(true)
                         }}
-                        className="w-1/6 h-2/4 relative flex items-center justify-center gap-3
+                        className="w-1/6 h-2/4 relative flex items-center justify-center gap-5
                          rounded-full
                          bg-black/40 backdrop-blur-xl backdrop-saturate-150
                          border border-green-400/30
@@ -82,8 +104,6 @@ const App = () => {
                          cursor-hover-target">
                         <span className="opacity-80">&gt;_</span>
                         <span className="opacity-70">Know me in a glimpse</span>
-
-                        <span className="w-[5px] h-4 bg-green-400 animate-pulse ml-1"></span>
                     </button>
 
                     <button
@@ -102,23 +122,18 @@ const App = () => {
                         {/*Fake Terminal like cursor*/}
                         <span className="w-[1px] h-4 bg-green-400 animate-pulse ml-1"></span>
                     </button>
-
-
                 </nav>
 
-                {/*Hero Section*/}
-                <div className="w-screen bg-white">
-                    <h4 className="text-red-700">Welcome, Establishing Connection...</h4>
-                </div>
-
-
-
-
-
                 {/*Terminal - code to be at the end*/}
-                <div className="flex justify-center align-top h-screen w-screen">
-                {showTerminal && <SummaryTerminal closeTerminal={() => setShowTerminal(false)}/>}
-                </div>
+                {showTerminal &&
+                    <div className="flex justify-center align-top h-screen w-screen z-50">
+                        <SummaryTerminal closeTerminal={() => setShowTerminal(false)}/>
+                    </div>
+                }
+
+                
+                {/*Hero Section*/}
+                <HeroSection roles={roles} role={role} />
 
             </div>
 
