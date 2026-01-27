@@ -4,6 +4,8 @@ import {useEffect, useState} from "react";
 import SummaryTerminal from "./Components/SummaryTerminal.jsx";
 import Pill from "./Components/Pill.jsx";
 import HeroSection from "./Components/HeroSection.jsx";
+import ExperienceSection from "./Components/ExperienceSection.jsx";
+import TopNavbar from "./Components/TopNavbar.jsx";
 // import { motion, AnimatePresence} from "motion/react";
 
 
@@ -70,7 +72,7 @@ const App = () => {
     }, []);
 
     return (
-        <div className="relative overflow-x-hidden font-mono antialiased">
+        <div className="relative overflow-x-hidden antialiased">
             {/*Background*/}
             {HighPerfMode && <CyberBackground3D/>}
 
@@ -81,59 +83,21 @@ const App = () => {
                     <div className="cursor-dot"></div>
                 </div>
 
-                <nav className="flex items-center justify-around w-screen h-[10vh]">
-                    <div className="logo flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.9)]"></span>
-                        <span className="text-white font-bold">Shubham Pandey</span>
-                    </div>
-
-
-                    <button
-                        onClick={() => {
-                            setShowTerminal(true)
-                        }}
-                        className="w-1/6 h-2/4 relative flex items-center justify-center gap-5
-                         rounded-full
-                         bg-black/40 backdrop-blur-xl backdrop-saturate-150
-                         border border-green-400/30
-                         text-green-400 font-mono text-sm
-                         shadow-[0_0_20px_rgba(0,255,0,0.15)]
-                         hover:bg-black/60 hover:border-green-400/60
-                         hover:shadow-[0_0_30px_rgba(0,255,0,0.35)]
-                         transition-all duration-300
-                         cursor-hover-target">
-                        <span className="opacity-80">&gt;_</span>
-                        <span className="opacity-70">Know me in a glimpse</span>
-                    </button>
-
-                    <button
-                        className="relative flex items-center
-                         rounded-full
-                         bg-black/40 backdrop-blur-xl backdrop-saturate-150
-                         border border-green-400/30
-                         text-green-400 font-mono text-sm
-                         shadow-[0_0_20px_rgba(0,255,0,0.15)]
-                         hover:bg-black/60 hover:border-green-400/60
-                         hover:shadow-[0_0_30px_rgba(0,255,0,0.35)]
-                         transition-all duration-300
-                         cursor-hover-target">
-                        <span className="opacity-80">&gt;_</span>
-                        <span className="opacity-70">Know me in a glimpse</span>
-                        {/*Fake Terminal like cursor*/}
-                        <span className="w-[1px] h-4 bg-green-400 animate-pulse ml-1"></span>
-                    </button>
-                </nav>
+                <TopNavbar setShowTerminal={setShowTerminal}/>
 
                 {/*Terminal - code to be at the end*/}
                 {showTerminal &&
-                    <div className="flex justify-center align-top h-screen w-screen z-50">
+                    <div className="absolute flex justify-center align-top h-screen w-screen z-50">
                         <SummaryTerminal closeTerminal={() => setShowTerminal(false)}/>
                     </div>
                 }
 
-                
                 {/*Hero Section*/}
-                <HeroSection roles={roles} role={role} />
+                <div className="h-[90vh] relative">
+                    <HeroSection roles={roles} role={role} />
+                </div>
+
+                <ExperienceSection/>
 
             </div>
 

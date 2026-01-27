@@ -36,6 +36,24 @@ html,body{
     margin-right: 24px;
 }
 
+.expLogo {
+    margin: 8px;
+}
+
+.card {
+    padding: 8px 16px;
+    margin-right: 64px;
+    margin-top: 128px;
+}
+
+.expCardPills {
+    margin: 8px 16px 0 16px;
+}
+
+.ulist {
+    padding: 16px 32px;
+}
+
 
 
 @keyframes slideFade {

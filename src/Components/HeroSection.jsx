@@ -2,7 +2,7 @@ import Pill from "./Pill.jsx";
 
 const HeroSection = ({roles, role}) => {
     return (
-        <div className="hero w-1/2 ">
+        <div className="absolute hero w-1/2 ">
 
             <div className="topHero h-fit flex items-center justify-start gap-5">
                 <Pill text={"Open To Opportunities"} setOnClick={null} setOnClickValue={null}/>

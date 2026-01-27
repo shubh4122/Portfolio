@@ -9,12 +9,12 @@ const SummaryTerminal = ({closeTerminal}) => {
     }
 
     return (
-        <div className="relative rounded-[1%] bg-gray-950/10 backdrop-blur-sm backdrop-saturate-150
+        <div className="relative rounded-[1%] bg-gray-950/10 backdrop-blur-3xl backdrop-saturate-150
             border border-white/10
             shadow-2xl shadow-black/50
             ring-1 ring-white/5
             before:absolute before:inset-0 before:rounded-[1%] before:bg-gradient-to-br before:from-white/5 before:to-transparent before:pointer-events-none
-            top-1/12
+            top-0
             w-1/2 h-3/4">
             <div className="flex items-center gap-2 border-b border-white/10 h-1/24">
                 {/*the first one is just to give the buttons a slight padding, normally it didn't work*/}
