@@ -19,7 +19,7 @@ const HeroSection = ({roles, role}) => {
             </p>
             <button className="heroBtn border-3 border-green-400/30 rounded-full bg-black/40
                             backdrop-blur-xl backdrop-saturate-150 text-green-400">View Resume 📃</button>
-            <button className="heroBtn border border-green-400/30 rounded-full
+            <button className="heroBtn border border-green-400/30 rounded-full font-bold
                             bg-green-400">Get in Touch 📩</button>
         </div>
     )

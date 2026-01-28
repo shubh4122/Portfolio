@@ -99,8 +99,13 @@ const App = () => {
 
                 <div>
                     <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Work Experience.</h1>
-
-                    <ExperienceSection/>
+                    <div className="flex">
+                        <div className="timeline bg-green-400/30 h-auto w-2.5">
+                            {/*<span className="absolute rounded-full bg-green-400 h-20 w-20"></span>*/}
+                            <span className="absolute  bg-green-400 h-1/5 w-2"/>
+                        </div>
+                        <ExperienceSection/>
+                    </div>
                 </div>
 
             </div>

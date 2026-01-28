@@ -46,8 +46,8 @@ html,body{
 
 .card {
     padding: 8px 16px;
-    margin-right: 64px;
-    margin-top: 128px;
+    margin-right: 100px;
+    margin-top: 88px;
 }
 
 .expCardPills {
@@ -58,6 +58,9 @@ html,body{
     padding: 16px 32px;
 }
 
+.timeline {
+    margin-left: 210px;
+}
 
 
 @keyframes slideFade {
