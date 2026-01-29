@@ -7,6 +7,7 @@ import HeroSection from "./Components/HeroSection.jsx";
 import ExperienceSection from "./Components/ExperienceSection.jsx";
 import TopNavbar from "./Components/TopNavbar.jsx";
 import EducationSection from "./Components/EducationSection.jsx";
+import ProjectSection from "./Components/ProjectSection.jsx";
 // import { motion, AnimatePresence} from "motion/react";
 
 
@@ -78,7 +79,7 @@ const App = () => {
             {HighPerfMode && <CyberBackground3D/>}
 
             {/*Foreground*/}
-            <div className="foreground">
+            <div className="foreground overflow-hidden">
                 {/*Cursor*/}
                 <div className="cursor-ring">
                     <div className="cursor-dot"></div>
@@ -113,6 +114,13 @@ const App = () => {
                 {/*    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Education.</h1>*/}
                 {/*    <EducationSection/>*/}
                 {/*</div>*/}
+
+                <div className="projects">
+                    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Projects.</h1>
+                    <ProjectSection/>
+                </div>
+
+                <div className="h-screen"><h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Education.</h1></div>
 
             </div>
 
