@@ -9,6 +9,7 @@ import TopNavbar from "./Components/TopNavbar.jsx";
 import EducationSection from "./Components/EducationSection.jsx";
 import ProjectSection from "./Components/ProjectSection.jsx";
 import SkillsSection from "./Components/SkillsSection.jsx";
+import Footer from "./Components/Footer.jsx";
 // import { motion, AnimatePresence} from "motion/react";
 
 
@@ -125,6 +126,8 @@ const App = () => {
                     <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Skills.</h1>
                     <SkillsSection/>
                 </div>
+
+                <Footer/>
 
             </div>
 
