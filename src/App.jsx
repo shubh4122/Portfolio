@@ -8,6 +8,7 @@ import ExperienceSection from "./Components/ExperienceSection.jsx";
 import TopNavbar from "./Components/TopNavbar.jsx";
 import EducationSection from "./Components/EducationSection.jsx";
 import ProjectSection from "./Components/ProjectSection.jsx";
+import SkillsSection from "./Components/SkillsSection.jsx";
 // import { motion, AnimatePresence} from "motion/react";
 
 
@@ -120,7 +121,10 @@ const App = () => {
                     <ProjectSection/>
                 </div>
 
-                <div className="h-screen"><h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Education.</h1></div>
+                <div className="h-screen">
+                    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Skills.</h1>
+                    <SkillsSection/>
+                </div>
 
             </div>
 
