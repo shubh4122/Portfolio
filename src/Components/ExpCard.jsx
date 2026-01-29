@@ -1,6 +1,6 @@
 import Pill from "./Pill.jsx";
 
-const ExpCard = ({img, Company, expRole, duration, location, responsibilities}) => {
+const ExpCard = ({img, Company, expRole, duration, location, responsibilities, grade}) => {
     return (
         <div className="card
             bg-gray-950/10 backdrop-blur-xs
@@ -11,7 +11,7 @@ const ExpCard = ({img, Company, expRole, duration, location, responsibilities}) 
                 <img src={img} alt={Company} className="expLogo rounded-full h-24 w-24 " />
                 <div className="flex flex-col">
                     <p className="text-3xl">{expRole}</p>
-                    <p className="text-xl bold">{Company}</p>
+                    <p className="text-xl bold text-green-400">{Company}</p>
                 </div>
             </div>
 
@@ -19,6 +19,7 @@ const ExpCard = ({img, Company, expRole, duration, location, responsibilities}) 
             <div className="flex expCardPills items-center gap-4 rounded-4xl">
                 <Pill text={location} />
                 <Pill text={duration} />
+                {grade && <Pill text={grade}/>}
             </div>
 
             <ul className="list-disc ulist">

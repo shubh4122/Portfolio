@@ -50,6 +50,15 @@ html,body{
     margin-top: 88px;
 }
 
+.experience {
+    padding-bottom: 88px;
+}
+
+.cardEd {
+    padding: 8px 16px;
+    /*margin-top: 88px;*/
+}
+
 .expCardPills {
     margin: 8px 16px 0 16px;
 }
@@ -59,7 +68,7 @@ html,body{
 }
 
 .timeline {
-    margin-left: 210px;
+    margin-left: 208px;
 }
 
 

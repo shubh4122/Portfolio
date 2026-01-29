@@ -1,4 +1,5 @@
 import ExpCard from "./ExpCard.jsx";
+import EducationCard from "./EducationCard.jsx";
 
 const ExperienceSection = () => {
     return (
@@ -32,6 +33,12 @@ const ExperienceSection = () => {
                          "Owned full feature integration across mobile and backend layers, ensuring data consistency and reliability.",
                          "Rapidly learned and applied new technologies to deliver core system components within project timelines.",
                      ]}/>
+
+            <ExpCard img={"hbtu.png"} expRole={"Harcourt Butler Technical University"}
+                     duration={"Aug'2022 - Sep'2022"} Company={"Bachelor of Technology - Information Technology"} location={"Kanpur"}
+                     grade={"8.62/10"} responsibilities={[]}
+                     />
+
         </div>
     )
 }

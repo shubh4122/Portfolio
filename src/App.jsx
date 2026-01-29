@@ -6,6 +6,7 @@ import Pill from "./Components/Pill.jsx";
 import HeroSection from "./Components/HeroSection.jsx";
 import ExperienceSection from "./Components/ExperienceSection.jsx";
 import TopNavbar from "./Components/TopNavbar.jsx";
+import EducationSection from "./Components/EducationSection.jsx";
 // import { motion, AnimatePresence} from "motion/react";
 
 
@@ -97,16 +98,21 @@ const App = () => {
                     <HeroSection roles={roles} role={role} />
                 </div>
 
-                <div>
-                    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Work Experience.</h1>
+                <div className="experience">
+                    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Experience.</h1>
                     <div className="flex">
-                        <div className="timeline bg-green-400/30 h-auto w-2.5">
+                        <div className="timeline bg-green-400/30 h-auto w-[11px]">
                             {/*<span className="absolute rounded-full bg-green-400 h-20 w-20"></span>*/}
-                            <span className="absolute  bg-green-400 h-1/5 w-2"/>
+                            <span className="absolute bg-green-400 h-1/5 w-[9px]"/>
                         </div>
                         <ExperienceSection/>
                     </div>
                 </div>
+
+                {/*<div className="education">*/}
+                {/*    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Education.</h1>*/}
+                {/*    <EducationSection/>*/}
+                {/*</div>*/}
 
             </div>
 
