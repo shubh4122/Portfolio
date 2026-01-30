@@ -10,6 +10,7 @@ import EducationSection from "./Components/EducationSection.jsx";
 import ProjectSection from "./Components/ProjectSection.jsx";
 import SkillsSection from "./Components/SkillsSection.jsx";
 import Footer from "./Components/Footer.jsx";
+import LowPerfBG from "./Components/LowPerfBG.jsx";
 // import { motion, AnimatePresence} from "motion/react";
 
 
@@ -78,7 +79,7 @@ const App = () => {
     return (
         <div className="relative overflow-x-hidden antialiased">
             {/*Background*/}
-            {HighPerfMode && <CyberBackground3D/>}
+            {HighPerfMode ? <CyberBackground3D/> : <LowPerfBG/>}
 
             {/*Foreground*/}
             <div className="foreground overflow-hidden">
@@ -87,7 +88,7 @@ const App = () => {
                     <div className="cursor-dot"></div>
                 </div>
 
-                <TopNavbar setShowTerminal={setShowTerminal}/>
+                <TopNavbar setShowTerminal={setShowTerminal} HighPerfMode={HighPerfMode} setHighPerfMode={setHighPerfMode}/>
 
                 {/*Terminal - code to be at the end*/}
                 {showTerminal &&

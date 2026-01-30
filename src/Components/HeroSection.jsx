@@ -6,7 +6,7 @@ const HeroSection = ({roles, role}) => {
 
             <div className="topHero h-fit flex items-center justify-start gap-5">
                 <Pill text={"Open To Opportunities"} setOnClick={null} setOnClickValue={null}/>
-                <span key={roles[role]} className="text-green-200 inset-0 animate-[slideFade_0.5s_ease-out]" >{roles[role]}</span>
+                {/*<span key={roles[role]} className="text-green-200 inset-0 animate-[slideFade_0.5s_ease-out]" >{roles[role]}</span>*/}
             </div>
             <h1 className="text-7xl font-bold tracking-tight text-green-400 ">Hi, I'm Shubham.</h1>
             <h2 className="sellingLine text-4xl font-bold tracking-tight text-white">Building Systems, Delivering Impact!</h2>
