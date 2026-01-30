@@ -1,3 +1,4 @@
+import AboutMe from "./AboutMe.jsx";
 
 const SummaryTerminal = ({closeTerminal}) => {
 
@@ -23,6 +24,7 @@ const SummaryTerminal = ({closeTerminal}) => {
                 <button onClick={minimizeTerminal} className="w-3 h-3 rounded-full bg-yellow-500/80"></button>
                 <button onClick={maximizeTerminal} className="w-3 h-3 rounded-full bg-green-500/20"></button>
             </div>
+            <AboutMe/>
         </div>
     );
 }

@@ -11,7 +11,7 @@ const TopNavbar = ({setShowTerminal}) => {
                 onClick={() => {
                     setShowTerminal(true)
                 }}
-                className="w-1/6 h-2/4 relative flex items-center justify-center gap-5
+                className="w-1/7 h-2/4 relative flex items-center justify-center gap-5
                          rounded-full
                          bg-black/40 backdrop-blur-xl backdrop-saturate-150
                          border border-green-400/30
@@ -22,7 +22,7 @@ const TopNavbar = ({setShowTerminal}) => {
                          transition-all duration-300
                          cursor-hover-target">
                 <span className="opacity-80">&gt;_</span>
-                <span className="opacity-70">Know me in a glimpse</span>
+                <span className="opacity-70">whoami (About me)</span>
             </button>
 
             <button
