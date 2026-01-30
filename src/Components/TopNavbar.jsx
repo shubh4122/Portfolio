@@ -5,7 +5,7 @@ const TopNavbar = ({setShowTerminal, setHighPerfMode, HighPerfMode}) => {
                             'border-red-400/30 text-red-400 hover:border-red-400/60 shadow-[0_0_20px_rgba(255,0,0,0.15)] hover:shadow-[0_0_30px_rgba(255,0,0,0.35)]'
 
     return (
-        <nav className="flex items-center justify-around w-screen h-[10vh]">
+        <nav className="flex items-center justify-around w-screen h-[10vh] bg-black/20 backdrop-blur-xs ">
             <div className="logo flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.9)]"></span>
                 <span className="text-white font-bold">Shubham Pandey</span>
@@ -14,7 +14,7 @@ const TopNavbar = ({setShowTerminal, setHighPerfMode, HighPerfMode}) => {
 
             <button
                 onClick={() => {
-                    setShowTerminal(true)
+                    setShowTerminal((prevState) => !prevState)
                 }}
                 className="w-1/7 h-2/4 relative flex items-center justify-center gap-5
                          rounded-full
