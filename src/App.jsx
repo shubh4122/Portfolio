@@ -101,13 +101,13 @@ const App = () => {
                     <HeroSection roles={roles} role={role} />
                 </div>
 
-                <div className="experience">
-                    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Experience.</h1>
+                <div className="leftall experience">
+                    <h1 className=" text-7xl font-bold tracking-tight text-green-400 ">Experience.</h1>
                     <div className="flex">
-                        <div className="timeline bg-green-400/30 h-auto w-[11px]">
-                            {/*<span className="absolute rounded-full bg-green-400 h-20 w-20"></span>*/}
-                            <span className="absolute bg-green-400 h-1/5 w-[9px]"/>
-                        </div>
+                        {/*<div className="timeline bg-green-400/30 h-auto w-[11px]">*/}
+                        {/*    /!*<span className="absolute rounded-full bg-green-400 h-20 w-20"></span>*!/*/}
+                        {/*    <span className="absolute bg-green-400 h-1/5 w-[9px]"/>*/}
+                        {/*</div>*/}
                         <ExperienceSection/>
                     </div>
                 </div>

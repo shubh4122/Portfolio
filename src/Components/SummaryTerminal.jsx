@@ -5,7 +5,7 @@ const SummaryTerminal = ({closeTerminal}) => {
 
     }
     const minimizeTerminal = () => {
-
+        closeTerminal();
     }
 
     return (
@@ -21,7 +21,7 @@ const SummaryTerminal = ({closeTerminal}) => {
                 <span className="w-1 h-3 rounded-full bg-transparent"></span>
                 <button onClick={closeTerminal} className="w-3 h-3 rounded-full bg-red-500/80"></button>
                 <button onClick={minimizeTerminal} className="w-3 h-3 rounded-full bg-yellow-500/80"></button>
-                <button onClick={maximizeTerminal} className="w-3 h-3 rounded-full bg-green-500/80"></button>
+                <button onClick={maximizeTerminal} className="w-3 h-3 rounded-full bg-green-500/20"></button>
             </div>
         </div>
     );
