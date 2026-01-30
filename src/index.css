@@ -49,8 +49,8 @@ button {
 }
 
 .cursor-dot {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     background: #00FF00;
     border-radius: 50%;
     position: fixed;
@@ -62,7 +62,8 @@ button {
 .cursor-ring {
     width: 16px;
     height: 16px;
-    border: 1px solid #00FF00;
+    border: 3px solid #00FF00;
+    mix-blend-mode: difference;
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
