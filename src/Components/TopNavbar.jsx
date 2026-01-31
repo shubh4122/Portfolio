@@ -11,12 +11,20 @@ const TopNavbar = ({setShowTerminal, setHighPerfMode, HighPerfMode}) => {
                 <span className="text-white font-bold">Shubham Pandey</span>
             </div>
 
+            <div className="navPageLinks flex items-center gap-8 ">
+                <div className="text-white/40 hover:text-white">Home</div>
+                <div className="text-white/40 hover:text-white">Experience</div>
+                <div className="text-white/40 hover:text-white">Projects</div>
+                <div className="text-white/40 hover:text-white">Skills</div>
+                <div className="text-white/40 hover:text-white">Contact Me</div>
+            </div>
+
 
             <button
                 onClick={() => {
                     setShowTerminal((prevState) => !prevState)
                 }}
-                className="w-1/7 h-2/4 relative flex items-center justify-center gap-5
+                className="w-1/8 h-2/4 relative flex items-center justify-center gap-5
                          rounded-full
                          bg-black/40 backdrop-blur-xl backdrop-saturate-150
                          border border-green-400/30
