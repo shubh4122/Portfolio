@@ -8,7 +8,7 @@ const ProjectSection = () => {
             <ProjCards img={"pc.png"}
                        name={"PolyChat"}
                        workingLink={""}
-                       source={""}
+                       source={"https://github.com/shubh4122/LangTransChatApp.git"}
                        category={"Web"}
                        skills={["MERN","ReactJs","NodeJs","Styled Components","SocketIO","TensorFlowJs","Machine Learning"]}
                        description=
@@ -18,7 +18,7 @@ const ProjectSection = () => {
             <ProjCards img={"ytd.png"}
                        name={"ytPlaylist-Downloader"}
                        workingLink={""}
-                       source={""}
+                       source={"https://github.com/shubh4122/ytDownloader.git"}
                        category={"Terminal/CLI"}
                        skills={["Python","Automation"]}
                        description=
@@ -28,7 +28,7 @@ const ProjectSection = () => {
             <ProjCards img={"kf.png"}
                        name={"KeyFortress"}
                        workingLink={""}
-                       source={""}
+                       source={"https://github.com/shubh4122/KeyFortress_hack36.git"}
                        category={"Android"}
                        skills={["Java","Firebase","XML","Picasso","Biometrics"]}
                        description=
@@ -38,7 +38,7 @@ const ProjectSection = () => {
             <ProjCards img={"ch.png"}
                        name={"ConnectHub"}
                        workingLink={""}
-                       source={""}
+                       source={"https://github.com/shubh4122/SocialMedia.git"}
                        category={"Android"}
                        skills={["Java","Firebase","Git","XML","Picasso",]}
                        description=
@@ -49,7 +49,7 @@ const ProjectSection = () => {
             <ProjCards img={"rsw.png"}
                        name={"Ransomware"}
                        workingLink={""}
-                       source={""}
+                       source={"https://github.com/shubh4122/Encrypting_RANSOMWARE.git"}
                        category={"Terminal/CLI"}
                        skills={["Python","Fernet","Encryption/Decryption"]}
                        description=
@@ -60,7 +60,7 @@ const ProjectSection = () => {
             <ProjCards img={"gga.png"}
                        name={"Git-GitHub Automation"}
                        workingLink={""}
-                       source={""}
+                       source={"https://github.com/shubh4122/Automation_Scripts_Git_Github.git"}
                        category={"Terminal/CLI"}
                        skills={["Git","Github","API","Automation","Shell"]}
                        description=

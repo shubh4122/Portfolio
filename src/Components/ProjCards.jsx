@@ -23,11 +23,18 @@ const ProductCards = ({img, name, description, skills, source, workingLink, cate
                 <p className="text-center"> <span className="text-green-400 font-extrabold">{category}</span> | {skills.join(" | ")}</p>
 
                 <div className="flex gap-2 w-full justify-center">
-                    {workingLink && <button className="btn btn-primary ProjCardBtn border-3 border-green-400/30 rounded-full bg-black/40
+                    {
+                        workingLink &&
+                        <a href={workingLink}  target={"_blank"}>
+                            <button className="btn btn-primary ProjCardBtn border-3 border-green-400/30 rounded-full bg-black/40
                             backdrop-blur-xl backdrop-saturate-150 text-green-400" onClick={workingLink}>View Project
-                        🔗</button>}
-                    <button className="flex gap-2 items-center btn ProjCardBtn btn-primary text-black border border-green-400/30 rounded-full font-bold
+                                🔗</button>
+                        </a>
+                    }
+                    <a href={source} target={"_blank"}>
+                        <button className="flex gap-2 items-center btn ProjCardBtn btn-primary text-black border border-green-400/30 rounded-full font-bold
                             bg-green-400" onClick={source}>Source <img src="github.svg" className="h-11/12"/></button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -5,7 +5,8 @@ const ExpCard = ({img, Company, expRole, duration, location, responsibilities, g
         <div className="card
             bg-gray-950/10 backdrop-blur-xs
             border border-green-400/10
-            shadow-[0_0_20px_rgba(0,255,0,0.15)] shadow-green-400/50
+            shadow-[0_0_20px_rgba(0,255,0,0.15)] shadow-green-400/10
+            hover:shadow-[0_0_20px_rgba(0,255,0,0.15)] hover:shadow-green-400/50 hover:scale-101
             w-11/12 rounded-4xl text-white">
             <div className="flex items-center gap-4 rounded-4xl">
                 <img src={img} alt={Company} className="expLogo rounded-full h-24 w-24 " />
