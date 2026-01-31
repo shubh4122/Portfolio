@@ -17,10 +17,14 @@ const HeroSection = ({roles, role}) => {
                 across global teams in
                 Saudi Arabia, the US, Vietnam, Malaysia, and the UAE.
             </p>
-            <button className="heroBtn border-3 border-green-400/30 rounded-full bg-black/40
+            <a href="https://drive.google.com/file/d/1vhXVr9NZ_fSGU6ExyUxJO1K8UGyHdkDS/view?usp=sharing" target={"_blank"}>
+                <button className="heroBtn border-3 border-green-400/30 rounded-full bg-black/40 hover:scale-90
                             backdrop-blur-xl backdrop-saturate-150 text-green-400">View Resume 📃</button>
-            <button className="heroBtn border border-green-400/30 rounded-full font-bold
+            </a>
+            <a href="mailto:spofficial4122@gmail.com" target={"_blank"}>
+                <button className="heroBtn border border-green-400/30 rounded-full font-bold hover:scale-90
                             bg-green-400">Get in Touch 📩</button>
+            </a>
         </div>
     )
 }
