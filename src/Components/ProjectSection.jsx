@@ -5,7 +5,7 @@ const ProjectSection = () => {
         <div className="section w-screen grid grid-cols-3 gap-y-8 place-items-center
             ">
 
-            <ProjCards img={"effiya.png"}
+            <ProjCards img={"pc.png"}
                        name={"PolyChat"}
                        workingLink={""}
                        source={""}
@@ -15,7 +15,7 @@ const ProjectSection = () => {
                            {"PolyChat is a multilingual web chat platform that uses machine learning models to perform real-time message translation, enabling seamless conversations between users speaking different languages without manual intervention."}
             />
 
-            <ProjCards img={"effiya.png"}
+            <ProjCards img={"ytd.png"}
                        name={"ytPlaylist-Downloader"}
                        workingLink={""}
                        source={""}
@@ -25,7 +25,7 @@ const ProjectSection = () => {
                            {"A terminal-based YouTube downloader designed for bulk efficiency, enabling one-command downloads of full playlists—solving a common limitation of existing tools that require manual, per-video downloads."}
             />
 
-            <ProjCards img={"effiya.png"}
+            <ProjCards img={"kf.png"}
                        name={"KeyFortress"}
                        workingLink={""}
                        source={""}
@@ -35,7 +35,7 @@ const ProjectSection = () => {
                            {"KeyFortress is a biometric-first password security solution developed at a hackathon, enabling users to log into accounts using biometrics while securely storing auto-generated, high-strength passwords that are nearly impossible to crack."}
             />
 
-            <ProjCards img={"effiya.png"}
+            <ProjCards img={"ch.png"}
                        name={"ConnectHub"}
                        workingLink={""}
                        source={""}
@@ -46,7 +46,7 @@ const ProjectSection = () => {
             />
 
 
-            <ProjCards img={"effiya.png"}
+            <ProjCards img={"rsw.png"}
                        name={"Ransomware"}
                        workingLink={""}
                        source={""}
@@ -57,7 +57,7 @@ const ProjectSection = () => {
             />
 
 
-            <ProjCards img={"effiya.png"}
+            <ProjCards img={"gga.png"}
                        name={"Git-GitHub Automation"}
                        workingLink={""}
                        source={""}
@@ -67,18 +67,18 @@ const ProjectSection = () => {
                            {"A CLI-based Git–GitHub automation script that creates a GitHub repository and links it to a local Git project in a single command—streamlining repository setup, reducing manual steps, and improving developer workflow efficiency."}
             />
 
-            <div></div>
+            {/*<div></div>*/}
 
 
-            <ProjCards img={"effiya.png"}
-                       name={"BlinkChat"}
-                       workingLink={""}
-                       source={""}
-                       category={"Android"}
-                       skills={["Java","Firebase","Git","XML","Glide",]}
-                       description=
-                           {"BlinkChat is a lightweight realtime chat app powered by Firebase, featuring secure authentication, instant messaging, and image sharing—built using FirebaseUI, Realtime Database, and Storage for a fast, seamless chat experience."}
-            />
+            {/*<ProjCards img={"bc.png"}*/}
+            {/*           name={"BlinkChat"}*/}
+            {/*           workingLink={""}*/}
+            {/*           source={""}*/}
+            {/*           category={"Android"}*/}
+            {/*           skills={["Java","Firebase","Git","XML","Glide",]}*/}
+            {/*           description=*/}
+            {/*               {"BlinkChat is a lightweight realtime chat app powered by Firebase, featuring secure authentication, instant messaging, and image sharing—built using FirebaseUI, Realtime Database, and Storage for a fast, seamless chat experience."}*/}
+            {/*/>*/}
 
 
         </div>

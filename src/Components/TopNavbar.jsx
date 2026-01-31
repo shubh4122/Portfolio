@@ -24,7 +24,7 @@ const TopNavbar = ({setShowTerminal, setHighPerfMode, HighPerfMode}) => {
                 onClick={() => {
                     setShowTerminal((prevState) => !prevState)
                 }}
-                className="w-1/8 h-2/4 relative flex items-center justify-center gap-5
+                className="w-1/8 h-2/4 relative flex items-center justify-center gap-2
                          rounded-full
                          bg-black/40 backdrop-blur-xl backdrop-saturate-150
                          border border-green-400/30
