@@ -1,6 +1,6 @@
 const BottomNav = () => {
     return(
-        <div className="bnav sticky bottom-1/40 w-1/2 h-20 border border-white/10 bg-gray-800/30 backdrop-blur-xs left-1/4 rounded-2xl flex items-center justify-center gap-5">
+        <div className="bnav sticky bottom-1/40 w-1/2 h-20 border border-white/10 bg-gray-800/30 backdrop-blur-xs left-1/4 rounded-2xl flex items-center justify-center gap-4">
             <div  className="hover:-translate-y-2 hover:scale-150 hover:rotate-4  h-full w-14 rounded-2xl overflow-hidden">
                 <img src="me1.jpeg" className="scale-150 -translate-y-1.5"/>
             </div>
@@ -13,7 +13,11 @@ const BottomNav = () => {
             {/*<img src="email.png" className="hover:-translate-y-2 hover:scale-150 h-16 w-16"/>*/}
             <vr className="h-full border-2 border-green-400/20 rounded-full"/>
             <button className="hover:-translate-y-2 hover:scale-150 hover:-rotate-4  h-full bg-purple-500/90 text-black font-bold text-xl bnav rounded-2xl">Resume</button>
-            <button className="hover:-translate-y-2 hover:scale-150 hover:-rotate-4 h-full bg-indigo-800/90 text-white font-bold text-xl bnav rounded-2xl">Get in Touch</button>
+            <button
+                className="flex gap-3 items-center justify-center tracking-tighter hover:-translate-y-2 hover:scale-150 hover:-rotate-4 h-full bg-indigo-800/90 text-white font-bold text-xl bnav rounded-2xl"
+            >
+                <img src="email.png" className="h-6 invert"/> Get in Touch
+            </button>
         </div>
     )
 }
