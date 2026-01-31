@@ -12,6 +12,10 @@ html,body{
     width: 100%;
 }
 
+.bnav {
+    padding: 12px;
+}
+
 .aboutMe {
     padding: 20px;
 }

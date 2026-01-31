@@ -11,6 +11,7 @@ import ProjectSection from "./Components/ProjectSection.jsx";
 import SkillsSection from "./Components/SkillsSection.jsx";
 import Footer from "./Components/Footer.jsx";
 import LowPerfBG from "./Components/LowPerfBG.jsx";
+import BottomNav from "./Components/BottomNav.jsx";
 // import { motion, AnimatePresence} from "motion/react";
 
 
@@ -77,62 +78,67 @@ const App = () => {
     }, []);
 
     return (
-        <div className="relative overflow-x-hidden antialiased">
-            {/*Background*/}
-            {HighPerfMode ? <CyberBackground3D/> : <LowPerfBG/>}
+        <div className="relative">
+            <div className="relative overflow-x-hidden antialiased">
+                {/*Background*/}
+                {HighPerfMode ? <CyberBackground3D/> : <LowPerfBG/>}
 
-            {/*Foreground*/}
-            <div className="foreground overflow-hidden">
-                {/*Cursor*/}
-                <div className="cursor-ring">
-                    <div className="cursor-dot"></div>
-                </div>
-
-                <TopNavbar setShowTerminal={setShowTerminal} HighPerfMode={HighPerfMode} setHighPerfMode={setHighPerfMode}/>
-
-                {/*Terminal - code to be at the end*/}
-                {showTerminal &&
-                    <div className="absolute flex justify-center align-top h-screen w-screen z-50">
-                        <SummaryTerminal closeTerminal={() => setShowTerminal(false)}/>
+                {/*Foreground*/}
+                <div className="foreground overflow-hidden">
+                    {/*Cursor*/}
+                    <div className="cursor-ring">
+                        <div className="cursor-dot"></div>
                     </div>
-                }
 
-                {/*Hero Section*/}
-                <div className="h-[90vh] relative">
-                    <HeroSection roles={roles} role={role} />
-                </div>
+                    <TopNavbar setShowTerminal={setShowTerminal} HighPerfMode={HighPerfMode} setHighPerfMode={setHighPerfMode}/>
 
-                <div className="leftall experience">
-                    <h1 className=" text-7xl font-bold tracking-tight text-green-400 ">Experience.</h1>
-                    <div className="flex">
-                        {/*<div className="timeline bg-green-400/30 h-auto w-[11px]">*/}
-                        {/*    /!*<span className="absolute rounded-full bg-green-400 h-20 w-20"></span>*!/*/}
-                        {/*    <span className="absolute bg-green-400 h-1/5 w-[9px]"/>*/}
-                        {/*</div>*/}
-                        <ExperienceSection/>
+                    {/*Terminal - code to be at the end*/}
+                    {showTerminal &&
+                        <div className="absolute flex justify-center align-top h-screen w-screen z-50">
+                            <SummaryTerminal closeTerminal={() => setShowTerminal(false)}/>
+                        </div>
+                    }
+
+                    {/*Hero Section*/}
+                    <div className="h-[90vh] relative">
+                        <HeroSection roles={roles} role={role} />
                     </div>
+
+                    <div className="leftall experience">
+                        <h1 className=" text-7xl font-bold tracking-tight text-green-400 ">Experience.</h1>
+                        <div className="flex">
+                            {/*<div className="timeline bg-green-400/30 h-auto w-[11px]">*/}
+                            {/*    /!*<span className="absolute rounded-full bg-green-400 h-20 w-20"></span>*!/*/}
+                            {/*    <span className="absolute bg-green-400 h-1/5 w-[9px]"/>*/}
+                            {/*</div>*/}
+                            <ExperienceSection/>
+                        </div>
+                    </div>
+
+                    {/*<div className="education">*/}
+                    {/*    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Education.</h1>*/}
+                    {/*    <EducationSection/>*/}
+                    {/*</div>*/}
+
+                    <div className="projects">
+                        <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Projects.</h1>
+                        <ProjectSection/>
+                    </div>
+
+                    <div className="h-screen">
+                        <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Skills.</h1>
+                        <SkillsSection/>
+                    </div>
+
+                    <Footer/>
+
                 </div>
-
-                {/*<div className="education">*/}
-                {/*    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Education.</h1>*/}
-                {/*    <EducationSection/>*/}
-                {/*</div>*/}
-
-                <div className="projects">
-                    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Projects.</h1>
-                    <ProjectSection/>
-                </div>
-
-                <div className="h-screen">
-                    <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Skills.</h1>
-                    <SkillsSection/>
-                </div>
-
-                <Footer/>
 
             </div>
 
+            <BottomNav/>
         </div>
+
 
 
 

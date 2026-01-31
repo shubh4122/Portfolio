@@ -1,0 +1,26 @@
+const BottomNav = () => {
+    return(
+        <div className="bnav sticky bottom-1/40 w-1/2 h-20 border border-white/10 bg-gray-800/30 backdrop-blur-xs left-1/4 rounded-2xl flex items-center justify-center gap-5">
+            <div  className="hover:-translate-y-2 hover:scale-150 hover:rotate-4  h-full w-14 rounded-2xl overflow-hidden">
+                <img src="me1.jpeg" className="scale-150 -translate-y-1.5"/>
+            </div>
+            <vr className="h-full border-2 border-green-400/20 rounded-full"/>
+            <img src="lin.png" className="hover:-translate-y-2  hover:scale-150 hover:rotate-4  h-16 w-16 grayscale hover:grayscale-0"/>
+            <img src="github.svg" className="hover:-translate-y-2 hover:scale-150 hover:rotate-4  h-14 w-14 invert-40 grayscale hover:invert"/>
+            <img src="wa.png" className="hover:-translate-y-2 hover:scale-150 hover:rotate-4  h-16 w-16  grayscale-80 hover:grayscale-0 "/>
+            <img src="x.png" className="hover:-translate-y-2 hover:scale-150 hover:-rotate-4  h-16 w-16 -translate-x-1 invert-40 scale-90 grayscale hover:invert"/>
+            {/*<img src="insta.png" className="hover:-translate-y-2 hover:scale-150 h-16 w-16 scale-150"/>*/}
+            {/*<img src="email.png" className="hover:-translate-y-2 hover:scale-150 h-16 w-16"/>*/}
+            <vr className="h-full border-2 border-green-400/20 rounded-full"/>
+            <button className="hover:-translate-y-2 hover:scale-150 hover:-rotate-4  h-full bg-purple-500/90 text-black font-bold text-xl bnav rounded-2xl">Resume</button>
+            <button className="hover:-translate-y-2 hover:scale-150 hover:-rotate-4 h-full bg-indigo-800/90 text-white font-bold text-xl bnav rounded-2xl">Get in Touch</button>
+        </div>
+    )
+}
+
+// my photo, and about me. |
+//Home - Experience - Projects - Skills |
+// LIn, Whatsapp, Github, Insta, Email |
+//View Resume
+
+export default BottomNav;
