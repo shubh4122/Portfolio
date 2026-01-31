@@ -52,7 +52,7 @@ const TopNavbar = ({setShowTerminal, setHighPerfMode, HighPerfMode}) => {
                     transition-all duration-300
                     cursor-hover-target`
                 }>
-                <span className="opacity-70">[ Performance Mode: {HighPerfMode ? "High": "Low"} ]</span>
+                <span className="opacity-70">Performance Mode: {HighPerfMode ? "High": "Low"}</span>
             </button>
         </nav>
     )

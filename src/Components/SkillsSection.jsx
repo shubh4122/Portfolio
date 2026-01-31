@@ -14,7 +14,7 @@ const SkillsSection = () => {
                 <SkillsCard icon={"data.png"} skills={["Cloudera(Hive/Impala)","Firebase","SQL/Non-SQL","pandas/numpy","matplotlib","Power BI","SAS Suite"]} bucket={"Data"}/>
                 <SkillsCard icon={"ml.png"} skills={["Modelling(Regression, Clustering,Statistical,Forecasting)","scikit-learn"]} bucket={"ML"}/>
                 <SkillsCard icon={"android.png"} skills={["Java", "Kotlin", "XML", "Android Studio"]} bucket={"Mobile Dev."}/>
-                <SkillsCard icon={"tools.png"} skills={["Linux","Git","VS Code","IntelliJ IDEA","Jupyter", "Android Studio","Figma","Postman","MS Office"]} bucket={"Tools/Platforms"}/>
+                <SkillsCard icon={"tools.png"} skills={["Linux","Git","VS Code","IntelliJ IDEA","Jupyter", "Android Studio","Figma","Postman","MS Office"]} bucket={"Tools/ Platforms"}/>
                 <SkillsCard icon={"soft.png"} skills={["Problem Solving","Requirement Gathering","Effective Communication","System Design"]} bucket={"Other Skills"}/>
             </div>
 
