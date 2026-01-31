@@ -104,7 +104,7 @@ const App = () => {
                         <HeroSection roles={roles} role={role} />
                     </div>
 
-                    <div className="leftall experience">
+                    <div id="expSec" className="leftall experience">
                         <h1 className=" text-7xl font-bold tracking-tight text-green-400 ">Experience.</h1>
                         <div className="flex">
                             {/*<div className="timeline bg-green-400/30 h-auto w-[11px]">*/}
@@ -120,12 +120,12 @@ const App = () => {
                     {/*    <EducationSection/>*/}
                     {/*</div>*/}
 
-                    <div className="projects">
+                    <div id="projSec" className="projects">
                         <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Projects.</h1>
                         <ProjectSection/>
                     </div>
 
-                    <div className="h-screen">
+                    <div id="skillSec" className="h-screen">
                         <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Skills.</h1>
                         <SkillsSection/>
                     </div>
@@ -135,7 +135,7 @@ const App = () => {
                 </div>
 
             </div>
-
+            {/*<a href="#"><button className="sticky bottom-3 bg-green-400 rounded-full h-16 w-16 right-0">Up</button></a>*/}
             <BottomNav/>
         </div>
 

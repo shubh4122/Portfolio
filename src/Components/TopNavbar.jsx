@@ -8,15 +8,15 @@ const TopNavbar = ({setShowTerminal, setHighPerfMode, HighPerfMode}) => {
         <nav className="flex items-center justify-around w-screen h-[10vh] bg-black/20 backdrop-blur-xs ">
             <div className="logo flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.9)]"></span>
-                <span className="text-white font-bold">Shubham Pandey</span>
+                <a href="#"><span className="text-white font-bold">Shubham Pandey</span></a>
             </div>
 
             <div className="navPageLinks flex items-center gap-8 ">
-                <div className="text-white/40 hover:text-white">Home</div>
-                <div className="text-white/40 hover:text-white">Experience</div>
-                <div className="text-white/40 hover:text-white">Projects</div>
-                <div className="text-white/40 hover:text-white">Skills</div>
-                <div className="text-white/40 hover:text-white">Contact Me</div>
+                <a href="#"><div className="text-white/40 hover:text-white">Home</div></a>
+                <a href="#expSec"><div className="text-white/40 hover:text-white">Experience</div></a>
+                <a href="#projSec"><div className="text-white/40 hover:text-white">Projects</div></a>
+                <a href="#skillSec"><div className="text-white/40 hover:text-white">Skills</div></a>
+                <a href="#contactSec"><div className="text-white/40 hover:text-white">Contact Me</div></a>
             </div>
 
 

@@ -20,7 +20,7 @@ const footer = () => {
 
 
     return (
-        <div className="footer w-screen bg-gray-950/10 backdrop-blur-xs h-fit text-white ">
+        <div id="contactSec" className="footer w-screen bg-gray-950/10 backdrop-blur-xs h-fit text-white ">
 
                 <div className="">
                     <div className="leftall flex flex-col gap-4">
