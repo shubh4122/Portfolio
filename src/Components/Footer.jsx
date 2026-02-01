@@ -29,15 +29,15 @@ const footer = () => {
                     </div>
 
 
-                    <div className="contacts flex">
-                        <p className="leftall text-2xl hover:scale-90">
+                    <div className="contacts sm:flex ">
+                        <p className="leftall max-sm:text-lg text-2xl hover:scale-90">
                             Phone:
                             <a href="tel:+91-7052800709" className="text-green-400 font-bold ">
-                                +91 7052800709
+                                +91-7052800709
                             </a>
                         </p>
 
-                        <p className="leftall text-2xl hover:scale-90">
+                        <p className="leftall max-sm:text-lg text-2xl hover:scale-90">
                             eMail:
                             <a href="mailto:spofficial4122@gmail.com" className="text-green-400 font-bold">
                                 spofficial4122@gmail.com
@@ -45,7 +45,7 @@ const footer = () => {
                         </p>
                     </div>
 
-                    <div className="flex gap-16 leftall">
+                    <div className="sm:flex sm:gap-16 grid grid-cols-3 gap-8 leftall">
                         <a href={`https://wa.me/917052800709?text=Hi Shubham, I came across your portfolio and wanted to connect.`} target={"_blank"}>
                             <button className="border-3 border-green-400/30 rounded-full bg-black/40
                                 backdrop-blur-xl backdrop-saturate-150 text-green-400
@@ -84,16 +84,18 @@ const footer = () => {
                                 bg-green-400 hover:shadow-[0_0_20px_rgba(0,255,0,0.2)] hover:-translate-y-0.5 flex items-center justify-center" >
                             <img src="x.png" className="h-16"/>
                         </button>
+                        </a>
 
-
+                        <a href={"https://drive.google.com/file/d/1vhXVr9NZ_fSGU6ExyUxJO1K8UGyHdkDS/view?usp=sharing"} target={"_blank"}>
+                            <button className="btn  btn-primary text-black border border-green-400/30 rounded-full font-bold
+                                bg-green-400 hover:shadow-[0_0_20px_rgba(0,255,0,0.2)] hover:-translate-y-0.5 flex items-center justify-center" >
+                                <img src="cv.png" className="h-16"/>
+                            </button>
                         </a>
                     </div>
                 </div>
 
             <div className="flex flex-col gap-4 items-center contacts ">
-                <div></div>
-                <div></div>
-                <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
