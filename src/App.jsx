@@ -12,6 +12,7 @@ import SkillsSection from "./Components/SkillsSection.jsx";
 import Footer from "./Components/Footer.jsx";
 import LowPerfBG from "./Components/LowPerfBG.jsx";
 import BottomNav from "./Components/BottomNav.jsx";
+import Menu from "./Components/Menu.jsx";
 // import { motion, AnimatePresence} from "motion/react";
 
 
@@ -19,6 +20,7 @@ const App = () => {
     const [HighPerfMode, setHighPerfMode] = useState(true);
     const [showTerminal, setShowTerminal] = useState(false);
     const [role, setRole] = useState(0);
+    const [openMenu, setOpenMenu] = useState(false);
 
     // setHighPerfMode(true); - //in 2 conditions - 1. Low performance device detected. 2. Toggled
 
@@ -90,7 +92,9 @@ const App = () => {
                         <div className="cursor-dot"></div>
                     </div>
 
-                    <TopNavbar setShowTerminal={setShowTerminal} HighPerfMode={HighPerfMode} setHighPerfMode={setHighPerfMode}/>
+                    <TopNavbar setShowTerminal={setShowTerminal} HighPerfMode={HighPerfMode} setHighPerfMode={setHighPerfMode} openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+                    {openMenu && <Menu setOpenMenu={setOpenMenu} setHighPerfMode={setHighPerfMode} HighPerfMode={HighPerfMode}/>}
+
 
                     {/*Terminal - code to be at the end*/}
                     {showTerminal &&

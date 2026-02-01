@@ -16,9 +16,27 @@ html,body{
     padding: 12px;
 }
 
-.navPageLinks {
+/*.navPageLinks {*/
+/*    padding: 16px;*/
+/*    margin: 0 100px;*/
+/*}*/
+
+@media only screen and (max-width: 1280px){
+    .navPageLinks {
+        /*padding: 5%;*/
+        /*margin: 0 5%;*/
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    .navPageLinks {
+        padding: 16px;
+        margin: 0 100px;
+    }
+}
+
+menu {
     padding: 16px;
-    margin: 0 100px;
 }
 
 .aboutMe {
@@ -90,6 +108,25 @@ html,body{
 
 .expLogo {
     margin: 8px;
+}
+
+/*.logo{*/
+/*    margin-left: 10%;*/
+/*}*/
+
+nav {
+    padding: 0 5%;
+}
+
+.navBtn {
+    padding: 0 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navBtn {
+        padding: 8px 8px;
+    }
+
 }
 
 .card {
