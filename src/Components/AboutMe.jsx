@@ -1,7 +1,7 @@
 const AboutMe = () => {
     return (
         <div className="aboutMe">
-            <img src="ascii-art.png" alt="Shubham Pandey" className="w-5/10 h-3/10 invert"/>
+            <img src="ascii-art.png" alt="Shubham Pandey" className="xl:w-5/10 xl:h-3/10 h-1/5 w-3/10 invert"/>
 
             <div>
                 <p className="text-purple-400/80">shubham@portfolio : <span className="text-cyan-400">whoami</span></p>
@@ -22,8 +22,9 @@ const AboutMe = () => {
                 </p>
             </div>
 
-            <p className="absolute w-full text-center bottom-1 text-xs text-gray-400">[Shaped by a long-standing fondness for Linux environments and command-line workflows]</p>
-        </div>
+            <div className="flex items-center justify-center">
+                <p className="absolute text-center bottom-1 text-xs text-gray-400 ">[Shaped by a long-standing fondness for Linux environments and command-line workflows]</p>
+            </div></div>
     )
 }
 
