@@ -100,7 +100,7 @@ const App = () => {
                     }
 
                     {/*Hero Section*/}
-                    <div className="h-[90vh] relative">
+                    <div className="h-[90vh] relative flex items-center">
                         <HeroSection roles={roles} role={role} />
                     </div>
 
