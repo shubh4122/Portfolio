@@ -8,7 +8,7 @@ const BottomNav = () => {
                     </div>
                 </a>
 
-                <vr className="h-full border-2 border-green-400/20 rounded-full"  className="max-[410px]:hidden"/>
+                <vr className="h-full border-2 border-green-400/20 rounded-full max-[410px]:hidden" />
 
                 <a href={"https://www.linkedin.com/in/shubh4122"} target={"_blank"} className="max-[410px]:hidden">
                     <img src="lin.png" className="hover:-translate-y-2  hover:scale-150 hover:rotate-4  h-16 w-16 grayscale hover:grayscale-0"/>

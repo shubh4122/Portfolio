@@ -3,7 +3,7 @@ import EducationCard from "./EducationCard.jsx";
 
 const ExperienceSection = () => {
     return (
-        <div className="h-fit w-screen  flex flex-col items-end">
+        <div className="h-fit w-screen  flex flex-col ">
             <ExpCard img={"effiya.png"} expRole={"Analyst - Software & Data Engineering"}
                      duration={"Jun'2024 - Present"} Company={"Effiya Technologies"} location={"Hybrid | Saudi Arabia | Delhi"}
                      responsibilities={[
