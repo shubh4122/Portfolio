@@ -2,7 +2,7 @@ import ProjCards from "./ProjCards.jsx";
 
 const ProjectSection = () => {
     return (
-        <div className="section w-screen grid grid-cols-3 gap-y-8 place-items-center
+        <div className="section w-screen grid xl:grid-cols-3 lg:grid-cols-2 gap-8 place-items-center
             ">
 
             <ProjCards img={"pc.png"}

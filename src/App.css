@@ -43,9 +43,9 @@ menu {
     padding: 20px;
 }
 
-.section {
-    padding: 64px 128px;
-}
+/*.section {*/
+/*    padding: 64px 128px;*/
+/*}*/
 
 .cardInternals {
     padding: 20px;
@@ -72,6 +72,10 @@ menu {
         /*margin-right: 100px;*/
         margin-top: 44px;
     }
+
+    .section {
+        padding: 64px 2%;
+    }
 }
 @media only screen and (min-width: 1280px) {
     .hero {
@@ -87,6 +91,10 @@ menu {
         padding: 8px 16px;
         /*margin-right: 100px;*/
         margin-top: 88px;
+    }
+
+    .section {
+        padding: 64px 5%;
     }
 }
 

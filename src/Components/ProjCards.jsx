@@ -6,7 +6,7 @@ const ProductCards = ({img, name, description, skills, source, workingLink, cate
             border border-green-400/10
             transition-shadow duration-300 ease-out
             hover:shadow-[0_0_20px_rgba(0,255,0,0.2)] hover:-translate-y-0.5
-            w-11/12 h-150 rounded-4xl text-white
+            xl:w-11/12 sm:w-60/100 lg:w-3/4 w-95/100 h-150 rounded-4xl text-white
             ">
 
             <div className="relative h-3/10 ">
@@ -16,7 +16,7 @@ const ProductCards = ({img, name, description, skills, source, workingLink, cate
 
             <p className="text-center text-3xl font-bold tracking-tight text-green-400 ">{name}</p>
             <div className="cardInternals h-1/3 flex justify-center">
-                <p className="text-justify w-9/10 tracking-tighter hyphens-auto">{description}</p>
+                <p className="text-justify w-9/10 tracking-tighter hyphens-auto ">{description}</p>
             </div>
 
             <div className="cardInternals absolute bottom-0 cardInternals flex flex-col gap-4 w-full">

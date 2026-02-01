@@ -125,12 +125,12 @@ const App = () => {
                     {/*</div>*/}
 
                     <div id="projSec" className="projects">
-                        <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Projects.</h1>
+                        <h1 className="leftall xl:text-7xl sm:text-6xl text-5xl  font-bold tracking-tight text-green-400 ">Projects.</h1>
                         <ProjectSection/>
                     </div>
 
                     <div id="skillSec" className="h-screen">
-                        <h1 className="leftall text-7xl font-bold tracking-tight text-green-400 ">Skills.</h1>
+                        <h1 className="leftall xl:text-7xl sm:text-6xl text-5xl  font-bold tracking-tight text-green-400 ">Skills.</h1>
                         <SkillsSection/>
                     </div>
 
