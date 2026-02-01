@@ -129,7 +129,7 @@ const App = () => {
                         <ProjectSection/>
                     </div>
 
-                    <div id="skillSec" className="h-screen">
+                    <div id="skillSec" className="">
                         <h1 className="leftall xl:text-7xl sm:text-6xl text-5xl  font-bold tracking-tight text-green-400 ">Skills.</h1>
                         <SkillsSection/>
                     </div>
