@@ -18,7 +18,7 @@ const HeroSection = ({roles, role}) => {
                             font-bold tracking-tight text-white">
                 Building Systems, Delivering Impact!
             </h2>
-            <p className="text-lg text-green-100">
+            <p className="text-lg text-green-100 max-[400px]:text-sm">
                 Through end-to-end, production-grade software — spanning design, development,
                 data, testing, and deployment — with
                 <span className="italic font-bold text-green-400"> 2+ years of hands-on experience </span>

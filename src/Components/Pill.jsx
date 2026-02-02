@@ -18,7 +18,9 @@ const Pill = ({text, setOnClick, setOnClickValue}) => {
                                  hover:shadow-[0_0_30px_rgba(0,255,0,0.35)]
                                  transition-all duration-300
                                  cursor-hover-target">
-                <span className="max-sm:hidden w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.9)]"></span>
+                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.9)]"></span>
+                {/*{text==="Open To Opportunities" &&*/}
+                {/*    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.9)]"></span>}*/}
                 <span className="opacity-70 max-md:text-sm">{text}</span>
             </button>
         </div>

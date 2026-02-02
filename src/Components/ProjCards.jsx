@@ -16,7 +16,7 @@ const ProductCards = ({img, name, description, skills, source, workingLink, cate
 
             <p className="text-center text-3xl font-bold tracking-tight text-green-400 ">{name}</p>
             <div className="cardInternals h-1/3 flex justify-center">
-                <p className="text-justify w-9/10 tracking-tighter hyphens-auto ">{description}</p>
+                <p className="text-justify w-9/10 tracking-tighter hyphens-auto max-[380px]:text-xs">{description}</p>
             </div>
 
             <div className="cardInternals absolute bottom-0 cardInternals flex flex-col gap-4 w-full">
