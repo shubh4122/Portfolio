@@ -14,7 +14,7 @@ const TopNavbar = ({setShowTerminal, setHighPerfMode, HighPerfMode, openMenu, se
                 <div className="logo flex items-center gap-2  w-[10vh] h-full">
                     {/*<span className="hidden xl:inline w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.9)]"></span>*/}
                     {/*<span className="hidden xl:inline text-white font-bold">Shubham Pandey</span>*/}
-                    <img src="spg.png" className="w-[10vh] h-[10vh]" />
+                    <img src="spg.png" loading="eager" className="w-[10vh] h-[10vh]" />
                 </div>
             </a>
             <div className="navPageLinks  items-center gap-6 hidden xl:flex  h-full">
@@ -80,7 +80,7 @@ const TopNavbar = ({setShowTerminal, setHighPerfMode, HighPerfMode, openMenu, se
                 <span className="opacity-70">Performance Mode: {HighPerfMode ? "High": "Low"}</span>
             </button>
 
-            <img src={!openMenu?"menu.png":"close.png"} className="inline xl:hidden w-[7vh] h-[7vh] scale-60 " onClick={()=>setOpenMenu(!openMenu)}/>
+            <img src={!openMenu?"menu.png":"close.png"} loading="eager" className="inline xl:hidden w-[7vh] h-[7vh] scale-60 " onClick={()=>setOpenMenu(!openMenu)}/>
 
         </nav>
     )

@@ -1,7 +1,7 @@
 const AboutMe = () => {
     return (
         <div className="aboutMe">
-            <img src="ascii-art.png" alt="Shubham Pandey" className="xl:w-5/10 xl:h-3/10 h-1/5 w-3/10 invert"/>
+            <img src="ascii-art.png" alt="Shubham Pandey" loading="eager" className="xl:w-5/10 xl:h-3/10 h-1/5 w-3/10 invert"/>
 
             <div>
                 <p className="text-purple-400/80">shubham@portfolio : <span className="text-cyan-400">whoami</span></p>
